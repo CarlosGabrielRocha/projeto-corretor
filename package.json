@@ -1,0 +1,31 @@
+{
+  "name": "projeto-corretor",
+  "version": "1.0.0",
+  "description": "Promotional website for a real estate agent.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --emptyOutDir"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarlosGabrielRocha/projeto-corretor.git"
+  },
+  "keywords": [],
+  "author": "Carlos Gabriel",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/CarlosGabrielRocha/projeto-corretor/issues"
+  },
+  "homepage": "https://github.com/CarlosGabrielRocha/projeto-corretor#readme",
+  "devDependencies": {
+    "sass": "^1.87.0",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.4"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.5"
+  }
+}
