@@ -1,0 +1,22 @@
+@use "sass:map";
+
+/* Minhas Variáveis */
+
+$dark-transparent: #00000067;
+$small-icon: 1.1em;
+$medium-icon: 1.5em;
+
+/* Variáveis Modificadas */
+
+$nav-link-padding-x: 0.1rem;
+
+/* maps */
+
+$my-custom-colors: (
+    "dark-transparent": $dark-transparent
+);
+
+$icons-size: (
+    "small": $small-icon,
+    "medium": $medium-icon
+);

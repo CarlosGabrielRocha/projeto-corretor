@@ -1,10 +1,17 @@
 import { defineConfig } from 'vite' /* Facilitador */
-import { join } from 'node:path'
+import { join, resolve } from 'node:path'
 
 export default defineConfig ({
     root: join(__dirname, 'src'),
+    publicDir: join(__dirname, 'public'),
     build: {
-        outDir: '../dist'
+        outDir: '../dist',
+        rollupOptions : {
+            input: {
+                index: resolve(__dirname, 'src/index.html'),
+                placeholder: resolve(__dirname, 'src/show-page.html')
+            }
+        }
     },
     server: {
         port: 8080

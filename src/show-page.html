@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dayse Rocha : Promotora de imóveis</title>
+  <title>Placeholder</title>
   <script type="module" src="ts/general.ts"></script>
-  <script type="module" src="ts/index.ts"></script>
+  <script type="module" src="ts/show.ts"></script>
 </head>
 
-<body>
+<body class="overflow-x-hidden">
   <header class="px-3 bg-primary">
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
@@ -55,53 +55,63 @@
     </nav>
   </header>
 
-  <!-- Carrossel -->
-  <section class="showcase-section">
-    <div id="showcase" class="carousel slide carousel-fade">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#showcase" data-bs-slide-to="0" class="active" aria-current="true"
-          aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#showcase" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#showcase" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="/images/placeholder-image1.webp" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="/images/placeholder-image2.webp" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="/images/placeholder-image3.webp" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#showcase" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#showcase" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </section>
-
   <!-- Conteúdo Principal -->
   <main>
-    <!-- Em destaque -->
-    <section class="container d-flex flex-column align-items-center gap-5 my-5 featured">
+    <!--  -->
+    <section class="property-info row d-flex flex-column align-items-center justify-content-center my-5">
+
+      <div class="desc col-12 col-lg-6 container-fluid d-flex flex-column gap-3">
+        <div class="d-flex flex-column gap-3 p-3 border border-white">
+          <h1 class="fs-3">Lorem - ipsum dolod, title</h1>
+          <div class="d-flex align-items-center">
+            <img class="small-icon" src="/icons/address-icon.svg" alt="...">
+            <address class="m-0">Rua osvaldo Manuel, 330, Recife-PE</address>
+          </div>
+          <span class="align-self-center p-1 fw-semibold text-bg-light rounded-3 fit-content">R$:100.00</span>
+        </div>
+        <div class="desc-body">
+          <div class="hstack gap-2">
+            <h1 class="fs-5">Descrição do imóvel</h1>
+            <span class="px-1 bg-primary rounded-1">Role para baixo<img src="/icons/arrow-down-icon.svg"
+                alt="Para baixo"></span>
+          </div>
+          <div id="desc-body-content" class="desc-body-content overflow-y-auto">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos placeat omnis nesciunt quaerat quia
+              quis dolores aliquam delectus optio odio? Saepe praesentium est porro deserunt minima vel maiores
+              consectetur error! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus distinctio dicta hic
+              nam iste voluptatibus excepturi nemo dolore reiciendis, soluta aut ex porro dignissimos vero quisquam
+              aperiam dolor eos eum?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptatibus iste voluptas
+              necessitatibus eligendi cumque. Porro libero deleniti ab magni sapiente. Et soluta quibusdam fuga enim
+              quidem consequuntur. Sed, velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, culpa
+              eveniet! Fuga ab, autem totam quaerat eius, molestias consectetur laudantium reiciendis culpa ea cum?
+              Facilis mollitia atque molestias culpa eius.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore quam culpa numquam omnis ut doloribus
+              accusantium cupiditate nostrum vel id similique praesentium, libero laudantium reiciendis voluptate,
+              corporis dolores velit obcaecati!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore quam culpa numquam omnis ut doloribus
+              accusantium cupiditate nostrum vel id similique praesentium, libero laudantium reiciendis voluptate,
+              corporis dolores velit obcaecati!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="showcase col-12 col-lg-6 vstack gap-2 container-fluid h-100 mt-5">
+        <div class="px-1 mx-auto bg-primary rounded-1 fit-content">Role para baixo<img src="/icons/arrow-down-icon.svg"
+            alt="Para baixo"></div>
+
+        <div id="showcase-body" class="showcase-body d-flex flex-lg-column gap-3 overflow-auto">
+          <img class="img-fluid" src="/images/placeholder-image1.webp" alt="...">
+          <img class="img-fluid" src="/images/placeholder-image2.webp" alt="...">
+          <img class="img-fluid" src="/images/placeholder-image3.webp" alt="...">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Imóveis Semelhantes -->
+  <aside class="my-5">
+    <section class="container d-flex flex-column align-items-center gap-5 featured">
       <div class="container-fluid d-flex gap-4 flex-row flex-sm-column justify-content-between p-0">
         <h1 class="fs-5 text-light text-center">Imóveis Semelhantes</h1>
         <!-- Barra de pesquisa -->
@@ -233,96 +243,7 @@
         </ul>
       </div>
     </section>
-
-    <!-- Realize o seu sonho -->
-    <section>
-      <div class="d-flex flex-column align-items-center gap-5">
-        <h1 class="text-light">Realize o seu Sonho da Residência Própria.</h1>
-        <img class="img-fluid" src="/images/placeholder-image1.webp" alt="...">
-      </div>
-    </section>
-
-    <!-- Sobre Nós -->
-    <section class="my-5 d-flex flex-column align-items-center justify-content-center about">
-      <div class="container">
-        <h1 class="text-center py-5 text-light">Sobre Nós</h1>
-        <p class="text-end">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fringilla justo id velit
-          aliquam, id porttitor turpis fringilla. Quisque sed bibendum massa. Phasellus dignissim efficitur leo ut
-          egestas. Nullam dolor massa, fermentum id posuere eget, vestibulum vitae neque. Integer sit amet magna tortor.
-          Vestibulum luctus purus at leo accumsan sagittis. Mauris faucibus mi ut sem accumsan, quis eleifend metus
-          aliquet. Donec ullamcorper enim eu magna hendrerit, quis euismod purus hendrerit.</p>
-      </div>
-
-      <div class="container-fluid row gx-4 gy-3 align-items-center justify-content-center py-5">
-
-        <div class="col" style="max-width: 15rem; min-width: 12.5rem;">
-          <div class="card rounded-3 pt-2 bg-body-secondary">
-            <div class="d-flex justify-content-center">
-              <img src="/icons/handshake-icon.svg" class="card-icon" alt="Aperto de mãos">
-            </div>
-            <div class="card-body p-2 text-center">
-              <h5 class="card-title text-light">Title</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fringilla justo id velit
-                aliquam, id porttitor turpis fringilla. Quisque sed bibendum massa. Phasellus dignissim efficitur leo ut
-                egestas.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col" style="max-width: 15rem; min-width: 12.5rem;">
-          <div class="card rounded-3 pt-2 bg-body-secondary">
-            <div class="d-flex justify-content-center">
-              <img src="/icons/handshake-icon.svg" class="card-icon" alt="Aperto de mãos">
-            </div>
-            <div class="card-body p-2 text-center">
-              <h5 class="card-title text-light">Title</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fringilla justo id velit
-                aliquam, id porttitor turpis fringilla. Quisque sed bibendum massa. Phasellus dignissim efficitur leo ut
-                egestas.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col" style="max-width: 15rem; min-width: 12.5rem;">
-          <div class="card rounded-3 pt-2 bg-body-secondary">
-            <div class="d-flex justify-content-center">
-              <img src="/icons/handshake-icon.svg" class="card-icon" alt="Aperto de mãos">
-            </div>
-            <div class="card-body p-2 text-center">
-              <h5 class="card-title text-light">Title</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fringilla justo id velit
-                aliquam, id porttitor turpis fringilla. Quisque sed bibendum massa. Phasellus dignissim efficitur leo ut
-                egestas.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="d-flex flex-column gap-5 py-5 bg-body-tertiary mb-5 launch">
-      <div class="position-relative d-flex align-items-center justify-content-center">
-        <hr class="position-absolute w-100">
-        <h1 class="py-2 px-4 text-light bg-body-secondary rounded-4">Lançamento</h1>
-      </div>
-
-      <div class="position-relative d-flex justify-content-center">
-        <img class="img-fluid" src="/images/placeholder-image1.webp" alt="...">
-        <p class="position-absolute top-0 w-75 mt-5 p-2 rounded-3 bg-dark-transparent">Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Ipsam ipsum magnam earum iste aut exercitationem laborum nulla reiciendis.</p>
-      </div>
-
-      <div class="position-relative d-flex align-items-center justify-content-center">
-        <hr class="position-absolute w-100">
-        <button class="btn btn-secondary">Saiba Mais</button>
-      </div>
-    </section>
-  </main>
+  </aside>
 
   <!-- Rodapé -->
   <footer class="bg-primary">
@@ -349,8 +270,6 @@
       <span>Desenvolvido por Carlos Gabriel</span>
     </div>
   </footer>
-
-  <!-- LEMBRAR DE FAZER O COMMIT -->
 </body>
 
 </html>

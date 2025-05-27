@@ -1,0 +1,50 @@
+@use "sass:map";
+
+/* Classes */
+
+.bg-dark-transparent {
+    background-color: map-get($my-custom-colors, "dark-transparent");
+}
+
+.small-icon {
+    width: map-get($icons-size, "small");
+}
+
+.medium-icon {
+    width: map-get($icons-size, "medium");
+}
+
+.fit-content {
+    width: fit-content;
+}
+
+/* Gerais */
+
+h5 {
+    font-size: 1em;
+}
+
+p {
+    font-size: 0.9em;
+}
+
+/* Cards das residências */
+
+.housing-card-container {
+    max-width: 15em;
+}
+
+@media screen and (max-width: 500px) {
+    .housing-card-container {
+        min-width: 10rem;
+        font-size: 0.8rem;
+    }
+
+}
+
+@media screen and (min-width: 501px) {
+    .housing-card-container {
+        min-width: 12rem;
+    }
+}
+
