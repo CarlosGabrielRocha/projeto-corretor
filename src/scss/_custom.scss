@@ -1,48 +1,5 @@
 @use "sass:map";
 
-h5 {
-    font-size: 1em;
-}
-
-p {
-    font-size: 0.9em;
-}
-
-/* Carrossel */
-.showcase-section {
-    border-radius: 0em 0em 9em 9em;
-    overflow: hidden;
-}
-
-/* Em Destaque */
-
-section.featured {
-    .card {
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-
-        span {
-            font-size: 0.9em;
-        }
-
-        img.icon {
-            width: 1em;
-        }
-    }
-}
-
-/* Sobre Nós */
-
-section.about {
-    .card {
-        padding: 0em;
-    }
-}
-
-img.card-icon {
-    width: 4em;
-}
-
 /* Classes */
 
 .bg-dark-transparent {
@@ -53,4 +10,41 @@ img.card-icon {
     width: map-get($icons-size, "small");
 }
 
-/*  */
+.medium-icon {
+    width: map-get($icons-size, "medium");
+}
+
+.fit-content {
+    width: fit-content;
+}
+
+/* Gerais */
+
+h5 {
+    font-size: 1em;
+}
+
+p {
+    font-size: 0.9em;
+}
+
+/* Cards das residências */
+
+.housing-card-container {
+    max-width: 15em;
+}
+
+@media screen and (max-width: 500px) {
+    .housing-card-container {
+        min-width: 10rem;
+        font-size: 0.8rem;
+    }
+
+}
+
+@media screen and (min-width: 501px) {
+    .housing-card-container {
+        min-width: 12rem;
+    }
+}
+

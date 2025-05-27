@@ -9,7 +9,7 @@ export default defineConfig ({
         rollupOptions : {
             input: {
                 index: resolve(__dirname, 'src/index.html'),
-                placeholder: resolve(__dirname, 'src/placeholder.html')
+                placeholder: resolve(__dirname, 'src/show-page.html')
             }
         }
     },

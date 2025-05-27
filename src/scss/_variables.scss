@@ -3,7 +3,8 @@
 /* Minhas Variáveis */
 
 $dark-transparent: #00000067;
-$small-icon: 1.5em;
+$small-icon: 1.1em;
+$medium-icon: 1.5em;
 
 /* Variáveis Modificadas */
 
@@ -16,5 +17,6 @@ $my-custom-colors: (
 );
 
 $icons-size: (
-    "small": $small-icon 
+    "small": $small-icon,
+    "medium": $medium-icon
 );

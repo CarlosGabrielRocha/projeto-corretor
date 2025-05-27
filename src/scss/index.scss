@@ -1,0 +1,35 @@
+
+/* Carrossel */
+.showcase-section {
+    border-radius: 0em 0em 9em 9em;
+    overflow: hidden;
+}
+
+/* Em Destaque */
+
+section.featured {
+    .card {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+
+        span {
+            font-size: 0.9em;
+        }
+
+        img.icon {
+            width: 1em;
+        }
+    }
+}
+
+/* Sobre Nós */
+
+section.about {
+    .card {
+        padding: 0em;
+    }
+}
+
+img.card-icon {
+    width: 4em;
+}
