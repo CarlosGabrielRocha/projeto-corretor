@@ -1,8 +1,10 @@
 
 /* Carrossel */
-.showcase-section {
-    border-radius: 0em 0em 9em 9em;
-    overflow: hidden;
+
+.carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 500%;
 }
 
 /* Em Destaque */
@@ -32,4 +34,23 @@ section.about {
 
 img.card-icon {
     width: 4em;
+}
+
+@media screen and (max-width: "576px") {
+    /* Carrossel */
+    .showcase-article {
+        border-radius: 0em 0em 9em 9em;
+        overflow: hidden;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    .vr { /* divisor vertical */
+        display: block;
+    }
+
+    .img-desc {
+        font-size: 1.2rem;
+    }
 }

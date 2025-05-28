@@ -10,10 +10,10 @@
 </head>
 
 <body class="overflow-x-hidden">
-  <header class="px-3 bg-primary">
+  <header class="px-lg-3 bg-primary">
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Dayse Rocha</a>
+        <a class="navbar-brand p-0 m-0" href="#">Dayse Rocha</a>
 
         <!-- Mobile button -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -23,33 +23,52 @@
 
         <!-- NavLinks -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto">
+          <ul class="navbar-nav mx-auto">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Destaques</a>
+            </li>
+            <li class="py-1">
+              <div class="vr h-100"></div>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Sobre Nós</a>
             </li>
+            <li class="py-1">
+              <div class="vr h-100"></div>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Lançamento</a>
+            </li>
+            <li class="py-1">
+              <div class="vr h-100"></div>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contato</a>
             </li>
           </ul>
-        </div>
 
-        <!-- Dropdown -->
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            Opções
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Tema</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
+          <!-- Dropdown -->
+          <div class="dropdown mt-3 mt-lg-0">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Opções
+            </button>
+            <ul class="dropdown-menu dropdown-menu-lg-end">
+              <li>
+                <a class="dropdown-item hstack gap-1" href="#">
+                  <img src="/icons/light-mode-icon.svg" alt="Trocar Tema">
+                  <span>Mudar Tema</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Destaques</a></li>
+              <li><a class="dropdown-item disabled" href="#">Sobre Nós</a></li>
+              <li><a class="dropdown-item disabled" href="#">Lançamento</a></li>
+              <li><a class="dropdown-item disabled" href="#">Contato</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
@@ -247,27 +266,35 @@
 
   <!-- Rodapé -->
   <footer class="bg-primary">
-    <div class="w-100 p-3 bg-secondary"></div>
+    <div class="w-100 p-4 bg-secondary"></div>
 
-    <div class="px-5 pt-4">
+    <div class="vstack gap-2 gap-lg-5 px-4 px-lg-5 py-5">
       <div class="d-flex flex-column">
         <h5>Lorem Ipsum Dolor</h5>
         <div class="d-flex align-items-center justify-content-between">
           <span>81 99999-9999</span>
           <div class="d-flex gap-5">
-            <img class="medium-icon" src="/icons/instagram-icon.svg" alt="Instagram">
-            <img class="medium-icon" src="/icons/whatsapp-icon.svg" alt="Whatsaap">
+            <a href="#">
+              <img class="medium-icon" src="/icons/instagram-icon.svg" alt="Instagram">
+            </a>
+            <a href="#">
+              <img class="medium-icon" src="/icons/whatsapp-icon.svg" alt="Whatsaap">
+            </a>
           </div>
         </div>
       </div>
-      <div>
-        <h5>Endereço:</h5>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+      <div class="w-75">
+        <address>
+          <h5>Endereço:</h5>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </address>
+        <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum maxime, totam est officiis
+          quidem reiciendis enim nesciunt accusantium tenetur, velit, ipsum natus!</p>
       </div>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum maxime, totam est officiis quidem reiciendis
-        enim nesciunt accusantium tenetur, velit, ipsum natus!</p>
-      <hr>
-      <span>Desenvolvido por Carlos Gabriel</span>
+      <div class="text-end">
+        <hr>
+        <span>Desenvolvido por Carlos Gabriel</span>
+      </div>
     </div>
   </footer>
 </body>
