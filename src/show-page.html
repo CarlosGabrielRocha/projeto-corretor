@@ -10,68 +10,29 @@
 </head>
 
 <body class="overflow-x-hidden">
-  <header class="px-3 bg-primary">
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Dayse Rocha</a>
-
-        <!-- Mobile button -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- NavLinks -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Destaques</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sobre Nós</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Lançamento</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contato</a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Dropdown -->
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            Opções
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Tema</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </div>
-      </div>
+  <header class="px-3 bg-primary shadow-sm">
+    <nav class="navbar">
+        <a class="navbar-brand" href="/">Dayse Rocha</a>
     </nav>
   </header>
 
   <!-- Conteúdo Principal -->
-  <main>
+  <main class="py-5">
     <!--  -->
-    <section class="property-info row d-flex flex-column align-items-center justify-content-center my-5">
+    <section class="property-info row d-flex flex-column align-items-center justify-content-center my-5 text-light">
 
       <div class="desc col-12 col-lg-6 container-fluid d-flex flex-column gap-3">
         <div class="d-flex flex-column gap-3 p-3 border border-white">
           <h1 class="fs-3">Lorem - ipsum dolod, title</h1>
-          <div class="d-flex align-items-center">
-            <img class="small-icon" src="/icons/address-icon.svg" alt="...">
+          <div class="d-flex align-items-center gap-2">
+            <img class="medium-icon" src="/icons/address-icon.svg" alt="...">
             <address class="m-0">Rua osvaldo Manuel, 330, Recife-PE</address>
           </div>
           <span class="align-self-center p-1 fw-semibold text-bg-light rounded-3 fit-content">R$:100.00</span>
         </div>
-        <div class="desc-body">
+        <div class="desc-body vstack gap-3 px-1">
           <div class="hstack gap-2">
-            <h1 class="fs-5">Descrição do imóvel</h1>
+            <h1 class="fs-5 text-decoration-underline">Descrição do imóvel</h1>
             <span class="px-1 bg-primary rounded-1">Role para baixo<img src="/icons/arrow-down-icon.svg"
                 alt="Para baixo"></span>
           </div>
@@ -93,6 +54,13 @@
               accusantium cupiditate nostrum vel id similique praesentium, libero laudantium reiciendis voluptate,
               corporis dolores velit obcaecati!</p>
           </div>
+          <div id="contact-agent" class="contact-agent d-flex flex-column align-items-center justify-content-center py-4 bg-info fw-semibold shadow rounded-2">
+            <p class="w-100 fs-6 p-3 text-center fw-bolder">Se interessou? Quer mais informações? Fale com um promotor:</p>
+            <button class="btn btn-secondary shadow">
+              <span class="fw-semibold">Conversar com Promotor</span>
+              <img class="small-icon" src="/icons/whatsapp-icon.svg" alt=" Whatsaap">
+            </button>
+          </div>
         </div>
       </div>
 
@@ -100,7 +68,7 @@
         <div class="px-1 mx-auto bg-primary rounded-1 fit-content">Role para baixo<img src="/icons/arrow-down-icon.svg"
             alt="Para baixo"></div>
 
-        <div id="showcase-body" class="showcase-body d-flex flex-lg-column gap-3 overflow-auto">
+        <div id="showcase-body" class="showcase-body d-flex flex-lg-column gap-3 shadow overflow-auto">
           <img class="img-fluid" src="/images/placeholder-image1.webp" alt="...">
           <img class="img-fluid" src="/images/placeholder-image2.webp" alt="...">
           <img class="img-fluid" src="/images/placeholder-image3.webp" alt="...">
@@ -110,164 +78,170 @@
   </main>
 
   <!-- Imóveis Semelhantes -->
-  <aside class="my-5">
-    <section class="container d-flex flex-column align-items-center gap-5 featured">
-      <div class="container-fluid d-flex gap-4 flex-row flex-sm-column justify-content-between p-0">
-        <h1 class="fs-5 text-light text-center">Imóveis Semelhantes</h1>
-        <!-- Barra de pesquisa -->
-        <form class="me-sm-auto" action="#" method="get" role="search">
-          <div class="position-relative d-flex gap-2 align-items-center justify-content-center"
-            style="max-width: 13rem; min-width: 10rem;">
-            <input type="text" class="form-control pe-4 rounded-5" style="height: 30px;">
-            <img class="small-icon position-absolute end-0 me-2" src="/icons/search-icon.svg" alt="Pesquisar">
+  <aside class="container d-flex flex-column align-items-center gap-5 py-4 my-5 featured border-top border-bottom border-light">
+    <div class="container-fluid d-flex gap-4 flex-row flex-sm-column justify-content-between p-0">
+      <h1 class="fs-4 text-light text-center">Imóveis Semelhantes</h1>
+      <!-- Barra de pesquisa -->
+      <form class="me-sm-auto" action="#" method="get" role="search">
+        <div class="position-relative d-flex gap-2 align-items-center justify-content-center"
+          style="max-width: 13rem; min-width: 10rem;">
+          <input type="text" class="form-control pe-4 rounded-5" style="height: 30px;">
+          <img class="small-icon position-absolute end-0 me-2" src="/icons/search-icon.svg" alt="Pesquisar">
+        </div>
+    </div>
+    </form>
+    <!-- Container de cards -->
+    <div class="container-fluid row gap-2 g-0 gy-3 justify-content-center justify-content-sm-between p-0">
+      <div class="col housing-card-container">
+        <div class="card rounded-3 pt-1 pt-sm-2 px-1 px-sm-2">
+          <img src="/images/apartament-placeholder2.jpg" class="card-img-top" alt="...">
+          <div class="card-header d-flex align-items-center justify-content-between">
+            <span>R$: 100.000</span>
+            <div class="d-flex gap-2">
+              <div class="d-flex gap-1">
+                <img class="icon" src="/icons/bed-icon.svg" alt="Quartos">
+                <span>2</span>
+              </div>
+              <div class="d-flex gap-1">
+                <img class="icon" src="/icons/shower-icon.svg" alt="Banheiros">
+                <span>1</span>
+              </div>
+            </div>
           </div>
+          <div class="card-body">
+            <h5 class="card-title">Apartamento</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card
+              content.</p>
+          </div>
+        </div>
       </div>
-      </form>
-      <!-- Container de cards -->
-      <div class="container-fluid row gap-2 g-0 gy-3 justify-content-center justify-content-sm-between p-0">
-        <div class="col housing-card-container">
-          <div class="card rounded-3 pt-2">
-            <img src="/images/placeholder-image1.webp" class="card-img-top" alt="...">
-            <div class="card-header d-flex align-items-center justify-content-between">
-              <span>R$: 100.000</span>
-              <div class="d-flex gap-2">
-                <div class="d-flex gap-1">
-                  <img class="icon" src="/icons/bed-icon.svg" alt="Quartos">
-                  <span>2</span>
-                </div>
-                <div class="d-flex gap-1">
-                  <img class="icon" src="/icons/shower-icon.svg" alt="Banheiros">
-                  <span>1</span>
-                </div>
+      <div class="col housing-card-container">
+        <div class="card rounded-3 pt-1 pt-sm-2 px-1 px-sm-2">
+          <img src="/images/apartament-placeholder2.jpg" class="card-img-top" alt="...">
+          <div class="card-header d-flex align-items-center justify-content-between">
+            <span>R$: 100.000</span>
+            <div class="d-flex gap-2">
+              <div class="d-flex gap-1">
+                <img class="icon" src="/icons/bed-icon.svg" alt="Quartos">
+                <span>2</span>
+              </div>
+              <div class="d-flex gap-1">
+                <img class="icon" src="/icons/shower-icon.svg" alt="Banheiros">
+                <span>1</span>
               </div>
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Apartamento</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card
-                content.</p>
-            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Apartamento</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card
+              content.</p>
           </div>
         </div>
-        <div class="col housing-card-container">
-          <div class="card rounded-3 pt-2">
-            <img src="/images/placeholder-image1.webp" class="card-img-top" alt="...">
-            <div class="card-header d-flex align-items-center justify-content-between">
-              <span>R$: 100.000</span>
-              <div class="d-flex gap-2">
-                <div class="d-flex gap-1">
-                  <img class="icon" src="/icons/bed-icon.svg" alt="Quartos">
-                  <span>2</span>
-                </div>
-                <div class="d-flex gap-1">
-                  <img class="icon" src="/icons/shower-icon.svg" alt="Banheiros">
-                  <span>1</span>
-                </div>
-              </div>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Apartamento</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card
-                content.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col housing-card-container">
-          <div class="card rounded-3 pt-2">
-            <img src="/images/placeholder-image1.webp" class="card-img-top" alt="...">
-            <div class="card-header d-flex align-items-center justify-content-between">
-              <span>R$: 100.000</span>
-              <div class="d-flex gap-2">
-                <div class="d-flex gap-1">
-                  <img class="icon" src="/icons/bed-icon.svg" alt="Quartos">
-                  <span>2</span>
-                </div>
-                <div class="d-flex gap-1">
-                  <img class="icon" src="/icons/shower-icon.svg" alt="Banheiros">
-                  <span>1</span>
-                </div>
-              </div>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Apartamento</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card
-                content.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col housing-card-container">
-          <div class="card rounded-3 pt-2">
-            <img src="/images/placeholder-image1.webp" class="card-img-top" alt="...">
-            <div class="card-header d-flex align-items-center justify-content-between">
-              <span>R$: 100.000</span>
-              <div class="d-flex gap-2">
-                <div class="d-flex gap-1">
-                  <img class="icon" src="/icons/bed-icon.svg" alt="Quartos">
-                  <span>2</span>
-                </div>
-                <div class="d-flex gap-1">
-                  <img class="icon" src="/icons/shower-icon.svg" alt="Banheiros">
-                  <span>1</span>
-                </div>
-              </div>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Apartamento</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card
-                content.</p>
-            </div>
-          </div>
-        </div>
-        <!-- Navegação entre os cards -->
-        <ul class="nav justify-content-center">
-          <li class="nav-item mx-1">
-            <a class="nav-link" aria-current="page" href="#"><img src="/icons/leftarrow-icon.svg" alt="anterior"></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">1</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">2</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">3</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">4</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">5...</a>
-          </li>
-          <li class="nav-item mx-1">
-            <a class="nav-link" aria-current="page" href="#"><img src="/icons/rightarrow-icon.svg" alt="próximo"></a>
-          </li>
-        </ul>
       </div>
-    </section>
+      <div class="col housing-card-container">
+        <div class="card rounded-3 pt-1 pt-sm-2 px-1 px-sm-2">
+          <img src="/images/apartament-placeholder2.jpg" class="card-img-top" alt="...">
+          <div class="card-header d-flex align-items-center justify-content-between">
+            <span>R$: 100.000</span>
+            <div class="d-flex gap-2">
+              <div class="d-flex gap-1">
+                <img class="icon" src="/icons/bed-icon.svg" alt="Quartos">
+                <span>2</span>
+              </div>
+              <div class="d-flex gap-1">
+                <img class="icon" src="/icons/shower-icon.svg" alt="Banheiros">
+                <span>1</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Apartamento</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card
+              content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col housing-card-container">
+        <div class="card rounded-3 pt-1 pt-sm-2 px-1 px-sm-2">
+          <img src="/images/apartament-placeholder2.jpg" class="card-img-top" alt="...">
+          <div class="card-header d-flex align-items-center justify-content-between">
+            <span>R$: 100.000</span>
+            <div class="d-flex gap-2">
+              <div class="d-flex gap-1">
+                <img class="icon" src="/icons/bed-icon.svg" alt="Quartos">
+                <span>2</span>
+              </div>
+              <div class="d-flex gap-1">
+                <img class="icon" src="/icons/shower-icon.svg" alt="Banheiros">
+                <span>1</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Apartamento</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card
+              content.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Navegação entre os cards -->
+      <ul class="nav justify-content-center">
+        <li class="nav-item mx-1">
+          <a class="nav-link" aria-current="page" href="#"><img src="/icons/leftarrow-icon.svg" alt="anterior"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">3</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">4</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">5...</a>
+        </li>
+        <li class="nav-item mx-1">
+          <a class="nav-link" aria-current="page" href="#"><img src="/icons/rightarrow-icon.svg" alt="próximo"></a>
+        </li>
+      </ul>
+    </div>
   </aside>
 
   <!-- Rodapé -->
-  <footer class="bg-primary">
-    <div class="w-100 p-3 bg-secondary"></div>
+  <footer class="bg-primary shadow">
+    <div class="w-100 p-4 bg-secondary"></div>
 
-    <div class="px-5 pt-4">
+    <div class="vstack gap-2 gap-lg-5 px-4 px-lg-5 py-5">
       <div class="d-flex flex-column">
         <h5>Lorem Ipsum Dolor</h5>
         <div class="d-flex align-items-center justify-content-between">
           <span>81 99999-9999</span>
           <div class="d-flex gap-5">
-            <img class="medium-icon" src="/icons/instagram-icon.svg" alt="Instagram">
-            <img class="medium-icon" src="/icons/whatsapp-icon.svg" alt="Whatsaap">
+            <a href="#">
+              <img class="medium-icon" src="/icons/instagram-icon.svg" alt="Instagram">
+            </a>
+            <a href="#">
+              <img class="medium-icon" src="/icons/whatsapp-icon.svg" alt="Whatsaap">
+            </a>
           </div>
         </div>
       </div>
-      <div>
-        <h5>Endereço:</h5>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+      <div class="w-75">
+        <address>
+          <h5>Endereço:</h5>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </address>
+        <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum maxime, totam est officiis
+          quidem reiciendis enim nesciunt accusantium tenetur, velit, ipsum natus!</p>
       </div>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum maxime, totam est officiis quidem reiciendis
-        enim nesciunt accusantium tenetur, velit, ipsum natus!</p>
-      <hr>
-      <span>Desenvolvido por Carlos Gabriel</span>
+      <div class="text-end">
+        <hr>
+        <span>Desenvolvido por Carlos Gabriel</span>
+      </div>
     </div>
   </footer>
 </body>

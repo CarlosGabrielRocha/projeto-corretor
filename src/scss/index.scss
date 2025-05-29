@@ -1,25 +1,11 @@
+@import 'variables.scss';
 
 /* Carrossel */
-.showcase-section {
-    border-radius: 0em 0em 9em 9em;
-    overflow: hidden;
-}
 
-/* Em Destaque */
-
-section.featured {
-    .card {
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-
-        span {
-            font-size: 0.9em;
-        }
-
-        img.icon {
-            width: 1em;
-        }
-    }
+.carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 500%;
 }
 
 /* Sobre Nós */
@@ -32,4 +18,71 @@ section.about {
 
 img.card-icon {
     width: 4em;
+}
+
+/* Lançamento */
+
+section.launch {
+    div.parallax {
+        height: 43rem;
+        background-color: rgb(23, 23, 23);
+        color: white;
+        box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.413);
+        background-image: url('/images/apartament-placeholder1.jpg');
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+}
+
+/* Botão para contato */
+
+a.contact-button {
+    position: fixed;
+    right: 20px;
+    bottom: 5rem;
+    width: fit-content;
+    padding: 0.5rem;
+    background-color: $lime;
+    border-radius: 50%;
+
+    img {
+        width: 1.8em;
+    }
+}
+
+@media screen and (max-width: "576px") {
+    /* Carrossel */
+    .showcase-article {
+        border-radius: 0em 0em 9em 9em;
+        overflow: hidden;
+    }
+}
+
+@media screen and (min-width: 501px) {
+    /* Botão para contato */
+    a.contact-button {
+        img {
+            width: 2em;
+        }
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    .vr {
+        /* divisor vertical */
+        display: block;
+    }
+
+    .img-desc {
+        font-size: 1.2rem;
+    }
+
+    /* Botão para contato */
+    a.contact-button {
+        img {
+            width: 2.3em;
+        }
+    }
 }
