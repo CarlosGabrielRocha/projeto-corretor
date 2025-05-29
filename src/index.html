@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <header class="px-lg-3 bg-primary">
+  <header class="px-lg-3 bg-primary shadow-sm sticky-top">
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand p-0 m-0" href="#">Dayse Rocha</a>
@@ -25,25 +25,25 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Destaques</a>
+              <a class="nav-link active" href="#featured">Destaques</a>
             </li>
             <li class="py-1">
               <div class="vr h-100"></div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Sobre Nós</a>
+              <a class="nav-link active" href="#about-us">Sobre Nós</a>
             </li>
             <li class="py-1">
               <div class="vr h-100"></div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Lançamento</a>
+              <a class="nav-link active" href="#launch">Lançamento</a>
             </li>
             <li class="py-1">
               <div class="vr h-100"></div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contato</a>
+              <a class="nav-link active" href="#contact">Contato</a>
             </li>
           </ul>
 
@@ -54,19 +54,20 @@
               Opções
             </button>
             <ul class="dropdown-menu dropdown-menu-lg-end">
-              <li>
-                <a class="dropdown-item hstack gap-1" href="#">
-                  <img src="/icons/light-mode-icon.svg" alt="Trocar Tema">
-                  <span>Mudar Tema</span>
-                </a>
-              </li>
+
+              <li><a class="dropdown-item" href="#featured">Destaques</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="#">Destaques</a></li>
-              <li><a class="dropdown-item disabled" href="#">Sobre Nós</a></li>
-              <li><a class="dropdown-item disabled" href="#">Lançamento</a></li>
-              <li><a class="dropdown-item disabled" href="#">Contato</a></li>
+              <li><a class="dropdown-item" href="#about-us">Sobre Nós</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#launch">Lançamento</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#contact">Contato</a></li>
             </ul>
           </div>
         </div>
@@ -76,7 +77,7 @@
 
   <!-- Carrossel -->
   <article class="showcase-article container-sm p-0 p-sm-2 p-md-5">
-    <div id="showcase" class="carousel slide">
+    <div id="showcase" class="carousel slide" data-bs-theme="light">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#showcase" data-bs-slide-to="0" class="active" aria-current="true"
           aria-label="Slide 1"></button>
@@ -134,9 +135,9 @@
   </article>
 
   <!-- Conteúdo Principal -->
-  <main>
+  <main class="mb-5 pb-5">
     <!-- Em destaque -->
-    <section class="container d-flex flex-column align-items-center gap-5 my-5 featured">
+    <section id="featured" class="container d-flex flex-column align-items-center gap-5 my-5 featured">
       <div class="container-fluid d-flex gap-4 flex-row flex-sm-column justify-content-between p-0">
         <h1 class="fs-4 text-light text-center">Destaques</h1>
         <!-- Barra de pesquisa -->
@@ -151,7 +152,7 @@
       <!-- Container de cards -->
       <div class="container-fluid row gap-2 g-0 gy-3 justify-content-center justify-content-sm-between p-0">
         <div class="col housing-card-container">
-          <div class="card rounded-3 pt-2">
+          <div class="card rounded-3 pt-1 pt-sm-2 px-1 px-sm-2">
             <img src="/images/apartament-placeholder2.jpg" class="card-img-top" alt="...">
             <div class="card-header d-flex align-items-center justify-content-between">
               <span>R$: 100.000</span>
@@ -174,7 +175,7 @@
           </div>
         </div>
         <div class="col housing-card-container">
-          <div class="card rounded-3 pt-2">
+          <div class="card rounded-3 pt-1 pt-sm-2 px-1 px-sm-2">
             <img src="/images/apartament-placeholder2.jpg" class="card-img-top" alt="...">
             <div class="card-header d-flex align-items-center justify-content-between">
               <span>R$: 100.000</span>
@@ -197,7 +198,7 @@
           </div>
         </div>
         <div class="col housing-card-container">
-          <div class="card rounded-3 pt-2">
+          <div class="card rounded-3 pt-1 pt-sm-2 px-1 px-sm-2">
             <img src="/images/apartament-placeholder2.jpg" class="card-img-top" alt="...">
             <div class="card-header d-flex align-items-center justify-content-between">
               <span>R$: 100.000</span>
@@ -220,7 +221,7 @@
           </div>
         </div>
         <div class="col housing-card-container">
-          <div class="card rounded-3 pt-2">
+          <div class="card rounded-3 pt-1 pt-sm-2 px-1 px-sm-2">
             <img src="/images/apartament-placeholder2.jpg" class="card-img-top" alt="...">
             <div class="card-header d-flex align-items-center justify-content-between">
               <span>R$: 100.000</span>
@@ -278,7 +279,7 @@
     </section>
 
     <!-- Sobre Nós -->
-    <section class="mt-5 d-flex flex-column align-items-center justify-content-center">
+    <section id="about-us" class="mt-5 d-flex flex-column align-items-center justify-content-center">
       <div class="container-sm px-lg-5">
         <h1 class="text-center py-5 text-light">Sobre Nós</h1>
         <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fringilla justo id velit
@@ -349,8 +350,8 @@
         <hr class="position-absolute w-100">
       </div>
 
-      <div class="container-fluid px-0 position-relative d-flex justify-content-center">
-        <img class="img-fluid" src="/images/apartament-placeholder1.jpg" alt="...">
+      <div id="launch" class="container-fluid px-0 position-relative d-flex justify-content-center parallax">
+        <!-- <img class="img-fluid" src="/images/apartament-placeholder1.jpg" alt="..."> -->
         <p class="img-desc position-absolute top-0 w-75 mt-1 mt-lg-5 p-2 text-center rounded-3 bg-dark-transparent">
           Lorem ipsum dolor sit amet
           consectetur adipisicing elit. Ipsam ipsum magnam earum iste aut exercitationem laborum nulla reiciendis.</p>
@@ -363,8 +364,16 @@
     </section>
   </main>
 
+  <!-- Botão flutuante para contato -->
+
+
+  <a class="contact-button" href="#" data-bs-toggle="tooltip" data-bs-title="Conversar com promotor">
+    <img src="/icons/whatsapp-icon.svg" alt="Whatsaap">
+  </a>
+
+
   <!-- Rodapé -->
-  <footer class="bg-primary">
+  <footer id="contact" class="bg-primary mt-5 shadow">
     <div class="w-100 p-4 bg-secondary"></div>
 
     <div class="vstack gap-2 gap-lg-5 px-4 px-lg-5 py-5">

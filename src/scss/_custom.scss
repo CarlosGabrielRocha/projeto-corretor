@@ -39,6 +39,18 @@ p {
 
 /* Cards das residências */
 
+section.featured, aside.featured {
+    .card {
+        span {
+            font-size: 0.9em;
+        }
+
+        img.icon {
+            width: 1em;
+        }
+    }
+}
+
 .housing-card-container {
     max-width: 15em;
 }
